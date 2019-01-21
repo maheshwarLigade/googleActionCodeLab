@@ -1,0 +1,60 @@
+{
+  "id": "01c9e176-80f8-4f63-a661-9efb715f847e",
+  "name": "make_name",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "make_name",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "id": "77ebeac8-6bf2-4871-af4e-811d7e921d30",
+          "required": true,
+          "dataType": "@sys.number",
+          "name": "number",
+          "value": "$number",
+          "prompts": [
+            {
+              "lang": "en",
+              "value": "What is your lucky number?"
+            }
+          ],
+          "isList": false
+        },
+        {
+          "id": "eca3de68-2529-4e56-bda3-97a8a702253a",
+          "required": true,
+          "dataType": "@sys.color",
+          "name": "color",
+          "value": "$color",
+          "prompts": [
+            {
+              "lang": "en",
+              "value": "What is your favorite color?"
+            },
+            {
+              "lang": "en",
+              "value": "What color is your favorite?"
+            }
+          ]
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "speech": "Alright, your silly name is $color $number. I hope you like it! See you next time!"
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": []
+}
